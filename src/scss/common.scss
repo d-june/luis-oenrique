@@ -1,0 +1,46 @@
+body {
+	font-weight: 500;
+	padding: 0 !important;
+}
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: rem(10) rem(20);
+	text-decoration: none;
+	color: $mainColor;
+	transition: all 0.3s ease 0s;
+	&_white {
+		background: #fff;
+	}
+
+	&_transparent {
+		border: 1px solid $mainColor;
+	}
+	&:hover {
+		color: $mainColor;
+		box-shadow: 0 0 15px $light;
+	}
+	@media (max-width: 576px) {
+		padding: rem(10) rem(10);
+	}
+}
+
+.title {
+	color: $medium;
+	font-size: rem(46);
+	font-weight: bold;
+	position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 32%;
+			width: rem(70);
+			height: rem(3);
+			background-color: $medium;
+		}
+	@media (max-width: 960px) {
+		font-size: rem(35);
+	}
+}

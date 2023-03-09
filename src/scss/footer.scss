@@ -1,0 +1,95 @@
+//====================================================================================================
+.footer {
+	background: url("img/contact-bg.jpg") center/cover no-repeat;
+	padding: rem(140) rem(0) rem(20) rem(0);
+	color: #fff;
+	position: relative;
+	@media (max-width: 960px) {
+		padding: rem(50) rem(0) rem(20) rem(0);
+	}
+	&__top {
+		color: $mainColor;
+		font-size: rem(20);
+		position: absolute;
+		bottom: 30%;
+		right: 20px;
+		background: #fff;
+		width: rem(50);
+		height: rem(50);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		text-decoration: none;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: #0084b4;
+		}
+		@media (max-width: 992px) {
+			bottom: 20px;
+		}
+		@media (max-width: 768px) {
+			top: 40px;
+		}
+	}
+	&__title {
+		color: #fff;
+		&::before {
+			background: #fff;
+		}
+	}
+	&__form {
+		border-bottom: 1px solid #fff;
+		margin-bottom: rem(20);
+	}
+	&__input {
+		border-radius: 0px;
+		&:focus {
+			border: 1px solid rgb(183, 178, 178);
+			box-shadow: 0 0 10px rgb(183, 178, 178);
+		}
+	}
+	&__textarea {
+		border-radius: 0px;
+		height: rem(200);
+		&:focus {
+			border: 1px solid rgb(183, 178, 178);
+			box-shadow: 0 0 10px rgb(183, 178, 178);
+		}
+	}
+	&__button {
+		width: rem(130);
+		border-radius: 0px;
+		@media (max-width: 992px) {
+			width: 100%;
+		}
+	}
+}
+
+.social {
+	a {
+		text-decoration: none;
+		color: $medium;
+		
+	}
+	&__icon {
+		font-size: rem(16);
+		font-style: normal;
+		width: rem(30);
+		height: rem(30);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.3s ease 0s;
+		background: #fff;
+		margin-right: rem(10);
+		&:hover {
+			background: #0084b4;
+		}
+	}
+	@media (max-width: 576px) {
+		width: 100%;
+		justify-content: center;
+	}
+}
+//====================================================================================================

@@ -1,0 +1,137 @@
+//====================================================================================================
+.about {
+	padding: rem(110) rem(0);
+	@media (max-width: 960px) {
+		padding: rem(50) rem(10);
+	}
+	&__title {
+		&::before {
+			left: 0;
+		}
+	}
+	&__button {
+		max-width: rem(235);
+	}
+		img {
+			width: 100%;
+		}
+}
+
+//====================================================================================================
+.services {
+	background: $bg;
+	padding: rem(110) rem(0) rem(80) rem(0);
+	@media (max-width: 960px) {
+		padding: rem(50) rem(0) rem(20) rem(0);
+	}
+}
+
+//====================================================================================================
+
+.skills {
+	padding: rem(110) rem(0);
+	@media (max-width: 960px) {
+		padding: rem(50) rem(0);
+	}
+	img {
+		width: 100%;
+	}
+}
+
+//====================================================================================================
+.portfolio {
+	background: $bg;
+	padding: rem(110) rem(0);
+	@media (max-width: 960px) {
+		padding: rem(50) rem(0);
+	}
+	&__item {
+		transition: all 0.3s ease 0s;
+		&:hover {
+			box-shadow: 0 0 25px $medium;
+		}
+	}
+	&__button {
+		max-width: rem(200);
+	}
+}
+
+//====================================================================================================
+
+.testimonials {
+	padding: rem(110) rem(0);
+	@media (max-width: 960px) {
+		padding: rem(50) rem(0);
+	}
+	&__title {
+		&::before {
+			left: 38%;
+		}
+	}
+	&__carousel {
+
+	}
+	&__about {
+
+	}
+	&__name {
+		font-size: rem(30);
+		color: $medium;
+	}
+	&__job {
+		font-style: italic;
+		font-size: rem(12);
+		color: $medium;
+	}
+	&__text {
+		color: $light;
+	}
+	img {
+		width: 100%;
+	}
+
+}
+
+.carousel-indicators [data-bs-target] {
+	width: 10px;
+	height: 10px;
+	background: transparent;
+	border: 1px solid #000;
+}
+
+.carousel-indicators .active {
+	background: #000;
+	margin-bottom: rem(10);
+}
+
+.carousel-item {
+	border: 1px solid #000;
+	padding: rem(40) rem(60) rem(60) rem(60);
+	@media (max-width: 992px) {
+		padding: rem(20) rem(0) rem(30) rem(0);
+	}
+
+}
+//====================================================================================================
+
+.advantages {
+	background: $bg;
+	padding: rem(110) rem(0) rem(90) rem(0);
+	margin-bottom: rem(150);
+	@media (max-width: 960px) {
+		padding: rem(50) rem(0) rem(30) rem(0);
+		margin-bottom: rem(50);
+	}
+	&__img {
+		max-width: rem(100);
+	}
+	&__quantity {
+		font-size: rem(30);
+		color: $medium;
+	}
+	&__text {
+		font-size: rem(22);
+		font-weight: 400;
+		color: $medium;
+	}
+}
